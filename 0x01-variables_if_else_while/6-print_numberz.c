@@ -1,14 +1,20 @@
 #include <stdio.h>
+#include <stdlib.h>
+
 /**
- * main - Entry point
- * Return: Always 0
- */
+* main - Entry point
+*
+* Return: Always 0 (Success)
+*/
 int main(void)
 {
-int num;
+int num = '0';
 
-for (num = 0; num < 10; num++)
-putchar((num % 10) + '0');
+while (num <= '9')
+{
+putchar(num);
+num++;
+}
 putchar('\n');
 return (0);
 }
